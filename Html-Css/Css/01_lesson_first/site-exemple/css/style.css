@@ -1,0 +1,61 @@
+/* Звернення до всіх Єлементів */
+
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/* Reset CSS End */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 970px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin: 0 auto;
+}
+
+/* Header Start */
+.header__nav {
+    border-bottom: 1px solid #828282;
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    list-style: none;
+
+}
+
+.header__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+
+    text-decoration: none;
+    color: #828282;
+}
+
+/* Header End */
+
+/* Hero Start */
+/* Hero End */
+
+/* About Start */
+/* About End */
