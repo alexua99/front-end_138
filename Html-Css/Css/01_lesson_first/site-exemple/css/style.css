@@ -1,5 +1,12 @@
 /* Звернення до всіх Єлементів */
 
+:root {
+    --color-grey: #F6F6F6;
+    --color-black: #070707;
+
+    --header-line-color: #828282;
+}
+
 /* Reset CSS */
 * {
     padding: 0;
@@ -28,9 +35,36 @@ body {
     margin: 0 auto;
 }
 
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+    color: var(--color-black)
+}
+
+.sub-title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 46.3px;
+    text-align: center;
+    color: var(--color-black);
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.51px;
+    text-align: center;
+    color: var(--color-black);
+}
+
+/* Button style here */
+.button {}
+
 /* Header Start */
 .header__nav {
-    border-bottom: 1px solid #828282;
+    border-bottom: 1px solid var(--header-line-color);
 }
 
 .header__list {
@@ -49,13 +83,58 @@ body {
     line-height: 25px;
 
     text-decoration: none;
-    color: #828282;
+    color: var(--header-line-color);
 }
 
 /* Header End */
+.hero {
+    padding-top: 12px;
+}
+
+.hero__title {
+    margin-bottom: 50px;
+}
 
 /* Hero Start */
+
 /* Hero End */
 
 /* About Start */
+.about {
+    background-color: var(--color-grey);
+}
+
+.about__container {
+    max-width: 480px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.about__title {
+    margin-bottom: 50px;
+}
+
+.about__text {
+    margin-bottom: 30px;
+}
+
 /* About End */
+
+/* Skills */
+.skills {
+    /* padding-top: 160px;
+    padding-bottom: 100px; */
+
+    padding: 160px 0 100px;
+}
+
+.skills__title {
+    margin-bottom: 20px;
+}
+
+/* Skills End */
+
+.portfolio {
+    background-color: var(--color-grey);
+    padding: 100px 0;
+}

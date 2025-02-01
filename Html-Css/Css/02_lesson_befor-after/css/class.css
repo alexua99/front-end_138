@@ -1,0 +1,42 @@
+.btn {
+    display: block;
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: blue;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+    border-radius: 10px;
+    min-width: 120px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgb(240, 16, 12);
+}
+
+.btn:active {
+    color: rgb(0, 0, 0);
+    background-color: rgb(107, 240, 12);
+}
+
+/* Через Один */
+/* .list__item:nth-child(2n) {
+    background-color: green;
+} */
+
+/* .list__item:nth-child(2) {
+    background-color: aqua;
+} */
+
+.list__item:first-child {
+    background-color: antiquewhite;
+}
+
+.list__item:last-child {
+    background-color: antiquewhite;
+}

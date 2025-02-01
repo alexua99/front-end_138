@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Псевдо Єлементи */
+
+.title::before {
+    content: '😀';
+}
+
+.title::after {
+    content: '😀';
+}
+
+.title-2::after {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: brown;
+
+}
