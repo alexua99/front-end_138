@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="button-gam">
+                х
+            </div>
+        </header>
+        <section>
+            <h1>test</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quaerat totam dicta nostrum commodi
+                sed provident, adipisci maxime explicabo fugit molestias repellendus, dolores natus sit consequuntur
+                voluptatem culpa placeat corrupti!
+            </p>
+        </section>
+    </div>
+
+
+
+
+    <script>
+        let btn = document.querySelector('.button-gam')
+        let wrap = document.querySelector('.wrapper')
+
+        btn.onclick = () => {
+            btn.classList.toggle('active')
+            wrap.classList.toggle('dark')
+        }
+    </script>
+</body>
+
+</html>

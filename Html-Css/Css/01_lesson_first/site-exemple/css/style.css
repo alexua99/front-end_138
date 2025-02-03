@@ -68,13 +68,29 @@ body {
 }
 
 .header__list {
-    display: flex;
+    display: none;
     justify-content: center;
     gap: 40px;
     padding-top: 25px;
     padding-bottom: 25px;
     list-style: none;
 
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__burger:checked+.header__row .header__list {
+    display: flex;
+}
+
+.header__button:before {
+    content: "=";
+}
+
+.header__burger:checked+.header__row .header__button:before {
+    content: "x";
 }
 
 .header__link {

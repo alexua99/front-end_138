@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --border-width: 5px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Зверненя до Єлементу в середені .hero */
+        .hero .hero__title {
+            color: blue;
+        }
+
+        /* Зверненя до Єлементу */
+        .hero__title {
+            color: brown;
+        }
+
+        /* Зверненя до Єлементу на одному рівні */
+        .hero.hero--dark {
+            background-color: red;
+        }
+
+        /* Зверненя до Єлементу першого нащадка */
+        .hero>.container {
+            background-color: blue;
+        }
+
+        /* Зверненя тількі до першого Єлементу під */
+        .hero__title+.hero__text {
+            color: red;
+        }
+
+        /* Зверненя до всіх Єлементу під */
+        .hero__title~.hero__text {
+            color: red;
+        }
+
+
+        .menu__item {
+            display: flex;
+            background-color: #88839E;
+            padding: 0 12px;
+            border-top: var(--border-width) solid transparent;
+            border-bottom: var(--border-width) solid transparent;
+        }
+
+        .menu__item:nth-child(2n) {
+            background-color: #7A7593;
+        }
+
+        .menu__item:hover {
+            background-color: #625E77;
+            border-top: var(--border-width) solid #fff;
+            border-bottom: var(--border-width) solid #fff;
+        }
+
+        .menu__label {
+            padding: 12px;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.09px;
+            text-align: left;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .menu__sub-text {
+            font-size: 11px;
+            line-height: 12px;
+        }
+
+        .menu__input:checked+.menu__label {
+            color: #9B96AC;
+
+        }
+
+        .menu__input:checked+.menu__label .menu__text {
+
+            text-decoration: line-through;
+        }
+
+        .menu__input:checked+.menu__label .menu__sub-text {
+
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="menu">
+        <div class="menu__item">
+            <input id="i1" type="checkbox" class="menu__input">
+            <label for="i1" class="menu__label">
+                <span class="menu__text">A lot of pickles</span>
+                <span class="menu__sub-text">(for the next lessons about CSS)</span>
+            </label>
+        </div>
+        <div class="menu__item">
+            <input id="i2" type="checkbox" class="menu__input">
+            <label for="i2" class="menu__label">
+                <span class="menu__text">A lot of pickles</span>
+                <span class="menu__sub-text">(for the next lessons about CSS)</span>
+            </label>
+        </div>
+        <div class="menu__item">
+            <input id="i3" type="checkbox" class="menu__input">
+            <label for="i3" class="menu__label">
+                <span class="menu__text">A lot of pickles</span>
+                <span class="menu__sub-text">(for the next lessons about CSS)</span>
+            </label>
+        </div>
+        <div class="menu__item">
+            <input id="i4" type="checkbox" class="menu__input">
+            <label for="i4" class="menu__label">
+                <span class="menu__text">A lot of pickles</span>
+                <span class="menu__sub-text">(for the next lessons about CSS)</span>
+            </label>
+        </div>
+        <div class="menu__item">
+            <input id="i5" type="checkbox" class="menu__input">
+            <label for="i5" class="menu__label">
+                <span class="menu__text">A lot of pickles</span>
+                <span class="menu__sub-text">(for the next lessons about CSS)</span>
+            </label>
+        </div>
+        <div class="menu__item">
+            <input id="i6" type="checkbox" class="menu__input">
+            <label for="i6" class="menu__label">
+                <span class="menu__text">A lot of pickles</span>
+                <span class="menu__sub-text">(for the next lessons about CSS)</span>
+            </label>
+        </div>
+    </div>
+
+</body>
+
+</html>
