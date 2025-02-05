@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Fonts */
+    --main-font: "Montserrat", sans-serif;
+
+
+    /* Colors */
+    --color-white: #FFFFFF;
+    --color-orange: #FF9900;
+
+    --color-title: #2F281E;
+    --color-text: #544837;
+    --color-border: #BCD0E5;
+
+
+    /* --title-font: 700 44px/54px var(--main-font); */
+
+
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: var(--color-text);
+}
+
+.title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    color: var(--color-title);
+
+    /* font: var(--title-font); */
+}
+
+.sub-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px;
+    color: var(--color-title);
+}
+
+.h3-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+/* Home Work */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.button {}
+
+.button-secondary {}
+
+.input {}
+
+
+/* Header section */
+.header {
+    padding-top: 70px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__content {
+    max-width: 500px;
+}
+
+.header__img {
+    width: 100%;
+    max-width: 644px;
+}
+
+/* Hero Section */
+
+
+/* Features section */
+.features {
+    padding: 100px 0 75px;
+    background-image: url(../img/bg.png);
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.features__title {
+    margin-bottom: 50px;
+    max-width: 520px;
+    text-align: center;
+}
+
+.features__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.features__item {
+    max-width: 270px;
+}
