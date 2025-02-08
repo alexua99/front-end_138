@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .section-name__item {
+            padding: 30px 10px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 46px -14px rgba(0, 0, 0, 0.75);
+
+        }
+
+        .section-name__img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Підхід з Флексом */
+        /* .section-name__row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .section-name__item {
+            width: 18%;
+        } */
+
+        .section-name__row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <section class="section-name">
+            <div class="container section-name__container">
+                <h2 class="section-name__title">test</h2>
+                <p class="section-name__text">shop</p>
+                <div class="section-name__row">
+                    <div class="section-name__item">
+                        <img class="section-name__img"
+                            src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="">
+                        <h2>item</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, excepturi.
+                        </p>
+                        <b>200 gr</b>
+                        <button>buy</button>
+                    </div>
+                    <div class="section-name__item">
+                        <img class="section-name__img"
+                            src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="">
+                        <h2>item</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, excepturi.
+                        </p>
+                        <b>200 gr</b>
+                        <button>buy</button>
+                    </div>
+                    <div class="section-name__item">
+                        <img class="section-name__img"
+                            src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="">
+                        <h2>item</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, excepturi.
+                        </p>
+                        <b>200 gr</b>
+                        <button>buy</button>
+                    </div>
+                    <div class="section-name__item">
+                        <img class="section-name__img"
+                            src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="">
+                        <h2>item</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, excepturi.
+                        </p>
+                        <b>200 gr</b>
+                        <button>buy</button>
+                    </div>
+                    <div class="section-name__item">
+                        <img class="section-name__img"
+                            src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="">
+                        <h2>item</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, excepturi.
+                        </p>
+                        <b>200 gr</b>
+                        <button>buy</button>
+                    </div>
+                    <div class="section-name__item">
+                        <img class="section-name__img"
+                            src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="">
+                        <h2>item</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, excepturi.
+                        </p>
+                        <b>200 gr</b>
+                        <button>buy</button>
+                    </div>
+                    <div class="section-name__item">
+                        <img class="section-name__img"
+                            src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="">
+                        <h2>item</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, excepturi.
+                        </p>
+                        <b>200 gr</b>
+                        <button>buy</button>
+                    </div>
+                    <div class="section-name__item">
+                        <img class="section-name__img"
+                            src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="">
+                        <h2>item</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, excepturi.
+                        </p>
+                        <b>200 gr</b>
+                        <button>buy</button>
+                    </div>
+                    <div class="section-name__item">
+                        <img class="section-name__img"
+                            src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="">
+                        <h2>item</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, excepturi.
+                        </p>
+                        <b>200 gr</b>
+                        <button>buy</button>
+                    </div>
+                    <div class="section-name__item">
+                        <img class="section-name__img"
+                            src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="">
+                        <h2>item</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, excepturi.
+                        </p>
+                        <b>200 gr</b>
+                        <button>buy</button>
+                    </div>
+                    <div class="section-name__item">
+                        <img class="section-name__img"
+                            src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="">
+                        <h2>item</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, excepturi.
+                        </p>
+                        <b>200 gr</b>
+                        <button>buy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
