@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box,
+        .box_v2,
+        .box_v3 {
+            height: 100px;
+            border: 1px solid;
+            background-color: aqua;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        /* flex-grow */
+        .box {
+            flex-grow: 1;
+        }
+
+        .box--1 {
+            background-color: bisque;
+        }
+
+        .box--2 {
+            /* flex-grow: 1; */
+        }
+
+        /* flex-shrink */
+        .box--3 {
+            width: 80px;
+            flex-shrink: 0;
+            /* це аналог flex-shrink */
+            min-width: 80px;
+        }
+
+        /* flex-shrink */
+        .flex-basis {
+            flex-direction: row;
+        }
+
+        .box_v3 {
+            /* це розмір по основній осі */
+            /* flex-basis: 200px; */
+
+        }
+
+        .box_v3 {
+            /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto; */
+
+            flex: 0 1 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flex Box</h2>
+    <h2>Flex Grow</h2>
+    <section class="flex">
+        <div class="box box--1">1</div>
+        <div class="box box--2">2</div>
+    </section>
+    <h2>Flex Shrink</h2>
+    <section class="flex">
+        <div class="box_v2 box--3"><img src="./search.png" width="100%" alt=""></div>
+        <div class="box_v2 box--4">241234123412341234123</div>
+    </section>
+    <h2>Flex Basis</h2>
+    <section class="flex flex-basis">
+        <div class="box_v3 box--5">1</div>
+        <div class="box_v3 box--6">2</div>
+    </section>
+</body>
+
+</html>
