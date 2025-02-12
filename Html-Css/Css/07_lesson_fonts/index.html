@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --main-font: "Montserrat", serif;
+
+            --color-white: #fff;
+            --color-main-bg: #07223F;
+            --color-secobdary-bg: #001A35;
+
+            --color-h4-title: #001A35;
+            --color-h4-bg: #E4E541;
+        }
+
+        body {
+            font-family: var(--main-font);
+            color: var(--color-white);
+            font-size: 16px;
+            line-height: 31px;
+            background-color: var(--color-main-bg);
+        }
+
+        .container {
+            max-width: 1110px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        .sub-title {
+            font-size: 51px;
+            line-height: 115%;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        .program {
+            background-color: var(--color-secobdary-bg);
+            background-image: url(./img/texture-bg.jpg);
+            background-size: 1200px;
+            background-position: center 200%;
+            background-repeat: repeat-x;
+            padding-top: 70px;
+            padding-bottom: 224px;
+        }
+
+        .program__container {}
+
+        .program__title {
+            text-align: center;
+            margin-bottom: 66px;
+        }
+
+        .program__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px 30px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .program__item {
+            width: 31%;
+
+        }
+
+        .program__item-title {}
+
+        .program__item-content {
+            min-height: 99px;
+            border-radius: 10px;
+            background-color: var(--color-main-bg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .program__item-title {
+            width: calc(100% - (23px * 2));
+            margin: 0 auto;
+            padding: 13px;
+            font-weight: 600;
+            line-height: 115%;
+            color: var(--color-h4-title);
+            background-color: var(--color-h4-bg);
+            border-radius: 10px;
+            margin-top: -50px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1></h1>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+
+                    <div class="hero__button-row">
+                        <button></button>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="hero__img"></div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+
+            </div>
+        </section>
+        <section class="program">
+            <div class="container program__container">
+                <h2 class="sub-title program__title">Коротко про програму</h2>
+                <div class="program__list">
+                    <div class="program__item">
+
+                        <div class="program__item-content">
+                            <h4 class="program__item-title">4 роки навчання</h4>
+                            <p>3 семестри на рік</p>
+                        </div>
+                    </div>
+                    <div class="program__item">
+
+                        <div class="program__item-content">
+                            <h4 class="program__item-title">4 роки навчання</h4>
+                            <p>3 семестри на рік</p>
+                        </div>
+                    </div>
+                    <div class="program__item">
+
+                        <div class="program__item-content">
+                            <h4 class="program__item-title">4 роки навчання</h4>
+                            <p>3 семестри на рік</p>
+                        </div>
+                    </div>
+                    <div class="program__item">
+
+                        <div class="program__item-content">
+                            <h4 class="program__item-title">4 роки навчання</h4>
+                            <p>3 семестри на рік</p>
+                        </div>
+                    </div>
+                    <div class="program__item">
+
+                        <div class="program__item-content">
+                            <h4 class="program__item-title">4 роки навчання</h4>
+                            <p>3 семестри на рік</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
