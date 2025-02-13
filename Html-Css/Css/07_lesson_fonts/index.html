@@ -24,6 +24,8 @@
 
             --color-h4-title: #001A35;
             --color-h4-bg: #E4E541;
+            --color-button-text: #002E5D;
+            --color-text-bg: #0E2D4C;
         }
 
         body {
@@ -40,11 +42,115 @@
             padding: 0 16px;
         }
 
+        .button {
+            border-radius: 10px;
+            background-color: var(--color-h4-bg);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: normal;
+            color: var(--color-button-text);
+            padding: 20px 25px;
+            cursor: pointer;
+        }
+
+        .title {
+            font-size: 72px;
+            font-weight: 400;
+            line-height: 115%;
+            text-transform: uppercase;
+        }
+
         .sub-title {
             font-size: 51px;
             line-height: 115%;
             font-weight: 400;
             text-transform: uppercase;
+        }
+
+        .sub-title--m {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 115%;
+        }
+
+        .sub-text {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .header {
+            padding-top: 42px;
+            padding-bottom: 128px;
+            background-color: var(--color-secobdary-bg);
+        }
+
+        .hero {
+            padding-bottom: 75px;
+            background-color: var(--color-secobdary-bg);
+        }
+
+        .hero__container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero__content {
+            min-width: 551px;
+        }
+
+        .hero__button-row {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .hero__title {
+            margin-bottom: 50px;
+        }
+
+        .hero__sub-title {
+            margin-bottom: 16px;
+        }
+
+        .hero__text {
+            width: fit-content;
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin-bottom: 10px;
+            background-color: var(--color-text-bg);
+        }
+
+        .hero__text-grup {
+            display: flex;
+            gap: 30px;
+            margin-top: 45px;
+            margin-bottom: 42px;
+        }
+
+        .hero__kv {
+            width: 100%;
+            max-width: 750px;
+        }
+
+        .hero__images {
+            position: absolute;
+            right: -150px;
+            top: -107px;
+        }
+
+        .about {
+            padding-top: 57px;
+            padding-bottom: 130px;
+        }
+
+        .about__container {
+            max-width: 730px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
         }
 
         .program {
@@ -56,8 +162,6 @@
             padding-top: 70px;
             padding-bottom: 224px;
         }
-
-        .program__container {}
 
         .program__title {
             text-align: center;
@@ -76,8 +180,6 @@
             width: 31%;
 
         }
-
-        .program__item-title {}
 
         .program__item-content {
             min-height: 99px;
@@ -108,28 +210,48 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-
+                <a class="logo" href="/'"><img src="./img/logo.svg" alt="logo" width="180" height="39"></a>
             </div>
         </header>
         <section class="hero">
-            <div class="container">
+            <div class="container hero__container">
                 <div class="hero__content">
-                    <h1></h1>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-
+                    <h1 class="title hero__title">Вища освіта</h1>
+                    <p class="sub-title--m hero__sub-title">Бакалаврські програми</p>
+                    <p class="sub-text hero__text">Економіка і великі дані</p>
+                    <p class="sub-text hero__text">ІТ і бізнес-аналіз</p>
+                    <p class="sub-text hero__text-grup">
+                        <span>4 роки навчання</span>
+                        <span>Викладання англійською</span>
+                    </p>
                     <div class="hero__button-row">
-                        <button></button>
-                        <p></p>
+                        <button class="button">
+                            Інвестувати в майбутнє
+                        </button>
+                        <p class="sub-text">
+                            Дедлайн подачі: <br>
+                            <b>22 липня</b>
+                        </p>
                     </div>
                 </div>
-                <div class="hero__img"></div>
+                <div class="hero__images">
+                    <img class="hero__kv" src="./img/main-kv.png" alt="main img">
+                </div>
             </div>
         </section>
         <section class="about">
-            <div class="container">
-
+            <div class="container about__container">
+                <p>Вища освіта в Київській школі економіки — це дві англомовні чотирирічні програми
+                    «Економіка і великі
+                    дані» та «ІТ і бізнес-аналіз». Обидві відповідають міжнародним стандартам освіти і поєднують сучасну
+                    теорію з практичними кейсами. Навчання англійською мовою та широка мережа партнерів відкривають
+                    студентам шлях до кар'єри в усьому світі.</p>
+                <p>
+                    Ми розкриваємо та збагачуємо таланти, за якими потім полюють потужні українські та міжнародні
+                    компанії. Викладачі із закордонною освітою та бізнеспрактики, ретельно підібрані складові навчання
+                    та індивідуальний підхід до кожного студента дають змогу використати час у школі максимально
+                    ефективно.
+                </p>
             </div>
         </section>
         <section class="program">
