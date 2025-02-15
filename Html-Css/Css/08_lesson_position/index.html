@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .position {
+            position: static;
+
+            /* Нічого не робить тількі починає працювати left right top left */
+            position: relative;
+
+            /* позиціонуется відносно вікна браузера */
+            position: fixed;
+
+            /* позиціонуется відносно батьківського єлементу з позішеном  */
+            position: absolute;
+
+            /* Приліпає  */
+            position: sticky;
+
+        }
+
+
+        .row {
+            position: relative;
+
+            width: 500px;
+            height: 500px;
+            background: red;
+        }
+
+        .box {
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+
+        .box--3 {
+            top: 50px;
+            right: 50px;
+            background-color: aquamarine;
+        }
+
+        .box--2 {
+            top: 100px;
+            right: 100px;
+            z-index: 1;
+
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque illum necessitatibus ipsam velit nemo
+            enim sequi, suscipit earum ex laudantium iusto rem maiores qui est magnam consequuntur aliquam tempore
+            dolores ullam labore deleniti? Reiciendis expedita quam dolor error eligendi quo velit. Expedita nisi
+            exercitationem vel corporis corrupti cumque deleniti!
+            <div class="content">
+                <div class="item">
+                    <div class="box"></div>
+                    <div class="box box--2"></div>
+                    <div class="box box--3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

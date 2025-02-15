@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            color: aliceblue;
+            transition: all 0.8s;
+
+
+        }
+
+        p {
+            display: var(--p-dispaly);
+            transform: var(--box-transform);
+            transition: all 0.8s;
+        }
+
+        .box:hover {
+            --p-dispaly: none;
+            --box-img-opacity: 1;
+            --box-transform: rotateY(180deg);
+            background-color: rgb(17, 70, 117);
+            transform: rotateY(180deg);
+        }
+
+        img {
+            width: 100%;
+            transform: var(--box-transform);
+            opacity: var(--box-img-opacity, 0);
+            transition: all 0.8s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, expedita.
+        </p>
+
+        <img src="https://media.4-paws.org/d/2/5/f/d25ff020556e4b5eae747c55576f3b50886c0b90/cut%20cat%20serhio%2002-1813x1811-720x719.jpg"
+            alt="">
+
+    </div>
+</body>
+
+</html>
