@@ -1,0 +1,15 @@
+{
+  "name": "11_lesson_sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass -w scss/main.scss style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.85.0"
+  }
+}

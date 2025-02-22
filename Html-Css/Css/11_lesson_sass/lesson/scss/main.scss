@@ -1,0 +1,45 @@
+// Variable
+@use './variables/color-variable';
+@use './variables/media' as *;
+
+// Global
+@use './global/main.scss';
+@use './global/buttons.scss';
+
+// Page
+@use './mixins/decoration-bg.scss' as decoration-bg;
+
+.hero {
+
+    &__title {
+        color: red;
+
+        &:hover {
+            color: blue;
+        }
+
+        &:before {
+            content: "123";
+        }
+
+        @media (max-width: $tablet) {
+            color: green;
+        }
+    }
+
+    &__text {
+        background-color: aqua;
+    }
+
+}
+
+.card {
+    @include decoration-bg.main(50px);
+}
+
+.footer {
+    &__item {
+        @include decoration-bg.main(10px);
+        // @include decoration-bg.main-non-border;
+    }
+}
