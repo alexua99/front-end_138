@@ -1,0 +1,26 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 35px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 10px 0px 73px -34px rgba(0, 0, 0, 0.75);
+
+    &__row-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__row-icon {
+        display: grid;
+        grid-template-columns: 1fr 50px;
+        gap: 12px;
+    }
+
+}
