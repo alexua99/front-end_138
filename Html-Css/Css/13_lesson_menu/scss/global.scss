@@ -1,0 +1,20 @@
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.logo {
+    @media (max-width: 991px) {
+        width: 133px;
+    }
+}

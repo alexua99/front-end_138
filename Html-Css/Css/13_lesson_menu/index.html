@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <a href="/">
+                    <img class="logo" src="./img/logo.svg" alt="logo" width="195">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="">Home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="">About</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="">Shop</a>
+                            <ul class="header__sub-nav">
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="">Iphone</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="">Laptop</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="">Android</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div for="inp01" class="header__buttons">
+                    <button class="button">Download</button>
+
+                    <div class="header__nav-button">
+                        <div class="header__nav-line"></div>
+                        <div class="header__nav-line"></div>
+                        <div class="header__nav-line"></div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <section>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro aut quis necessitatibus obcaecati
+            laboriosam, sed error quisquam labore enim soluta, sapiente id in odit officia fugit consectetur unde eaque
+            corporis deleniti nihil ad fugiat. Alias quis beatae amet totam iste rem explicabo repudiandae optio ipsa
+            veniam obcaecati culpa, sed quidem minus aspernatur quia! Possimus asperiores quam porro voluptas culpa odit
+            accusantium rerum! Non quas hic alias, quaerat mollitia suscipit nobis minima temporibus provident enim, aut
+            fugit soluta cumque amet error. Fugit atque possimus explicabo facere molestiae quod fugiat, porro similique
+            adipisci animi quam voluptates! Excepturi voluptates iste minima voluptatum autem.
+        </section>
+
+        <footer></footer>
+    </div>
+
+
+    <script>
+        const menuButton = document.querySelector('.header__nav-button')
+        const headerNav = document.querySelector('.header__nav')
+
+
+        menuButton.onclick = () => {
+            menuButton.classList.toggle('header__nav-button--open')
+            headerNav.classList.toggle('header__nav--visible')
+        }
+    </script>
+</body>
+
+</html>
