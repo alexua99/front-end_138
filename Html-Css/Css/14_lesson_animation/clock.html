@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .clock {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-image: url(https://i.pinimg.com/474x/48/52/63/4852633f4bf8d11445d39cce2160b2f8.jpg);
+            background-size: cover;
+        }
+
+        .clock__arrow {
+            width: 300px;
+            height: 300px;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .clock__arrow--second {
+            animation: clock 60s infinite;
+            animation-play-state: running;
+        }
+
+        .clock__arrow--minutes {
+            animation: clock 3600s infinite;
+        }
+
+        .clock__arrow--second:hover {
+            animation-play-state: paused;
+        }
+
+        .line {
+            background-color: black;
+            width: 3px;
+            height: 150px;
+        }
+
+
+        .progresbar {
+            border: 1px solid;
+            border-radius: 5px;
+            height: 40px;
+            overflow: hidden;
+            width: 400px;
+        }
+
+        .progresbar__line {
+            animation-play-state: running;
+            background-color: aqua;
+            height: 100%;
+            width: 100%;
+            animation: progress 5s;
+        }
+
+
+
+        .button-stop {
+            display: none;
+        }
+
+        .button {
+            display: block;
+            width: fit-content;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid;
+            background-color: aquamarine;
+            margin-bottom: 5px;
+        }
+
+        .button::before {
+            content: "Stop";
+        }
+
+        .button-stop:checked~.progresbar .progresbar__line {
+            animation-play-state: paused;
+        }
+
+        .button-stop:checked~.button::before {
+            content: "Play";
+        }
+
+        @keyframes clock {
+            0% {
+                transform: translate(-50%, -50%) rotate(0);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        @keyframes progress {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="clock">
+        <div class="clock__arrow clock__arrow--second">
+            <div class="line"></div>
+        </div>
+        <!-- <div class="clock__arrow clock__arrow--minutes">
+            <div class="line"></div>
+        </div> -->
+    </div>
+
+    <input id="chk01" type="checkbox" class="button-stop">
+    <label for="chk01" class="button"></label>
+    <div class="progresbar">
+        <div class="progresbar__line"></div>
+    </div>
+</body>
+
+</html>
