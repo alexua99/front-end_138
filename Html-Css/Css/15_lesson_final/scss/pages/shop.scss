@@ -1,0 +1,13 @@
+.shop {
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__item {
+        display: block;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 10px;
+    }
+}

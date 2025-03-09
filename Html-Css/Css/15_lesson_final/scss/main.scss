@@ -1,0 +1,18 @@
+// Variable
+@use './variable/colors';
+@use './variable/fonts';
+
+// Global
+@use './global/global.scss';
+
+// Component
+@use './component/theme-sw.scss';
+
+// Common
+@use './common/header.scss';
+@use './common/footer.scss';
+
+// Pages
+@use './pages/home.scss';
+@use './pages/contact.scss';
+@use './pages/shop.scss';

@@ -196,7 +196,6 @@ body {
 
 .program {
     background-color: var(--color-secobdary-bg);
-    background-image: url(./img/texture-bg.jpg);
     background-size: 1200px;
     background-position: center 200%;
     background-repeat: repeat-x;

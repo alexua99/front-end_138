@@ -1,0 +1,67 @@
+@use './media' as *;
+
+:root {
+    --main-font-family: "Arial", san-serif;
+
+}
+
+.title {
+    font-family: var(--main-font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 5%;
+
+    @media (max-width: $tablet) {
+        font-size: 33px;
+        line-height: 50px;
+    }
+
+    @media (max-width: $mibile) {
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+
+.h2 {
+    font-family: var(--main-font-family);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 10%;
+
+    @media (max-width: $mibile) {
+        font-size: 26px;
+        line-height: 43px;
+    }
+
+}
+
+// v_2
+// :root {
+//     --main-font-family: "Arial", san-serif;
+
+//     --title: 600 48px/64px var(--main-font-family);
+//     --h2: 600 28px/46px var(--main-font-family);
+
+
+//     @media (max-width: $tablet) {
+//         --title: 600 33px/50px var(--main-font-family);
+//     }
+
+//     @media (max-width: $mibile) {
+//         --title: 600 30px/50px var(--main-font-family);
+//         --h2: 600 26px/43px var(--main-font-family);
+//     }
+
+// }
+
+// .title {
+//     font: var(--title);
+//     letter-spacing: 5%;
+// }
+
+// .h2 {
+//     font: var(--h2);
+//     letter-spacing: 10%;
+// }
